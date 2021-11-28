@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+
+    <head>
+		    <title>Pavel Kravets</title>
+        <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+	
+    <body>
+
+        <div class="container">
+            
+            <div class="dropdown">
+                <button class="mainmenubtn">Menu</button>
+                <div class="dropdown-child">
+                  <a href="#" data-img="people">People</a>
+                  <a href="#" data-img="landscapes">Landscapes</a>
+                  <a href="#" data-img="places">Places</a>
+                  <a href="#" data-img="animals">Animals</a>
+                  <a href="#" data-img="events">Events</a>
+                  <a href="#" data-img="mcro">Macro</a>
+                  <a href="#" data-img="street">Street</a>
+                  <a href="#" data-img="blackwhite">Black&amp;White</a>
+                </div>
+              </div>
+
+        </div>
+
+        <script>
+            const container = document.querySelector('.container'),
+                  boxLinks = document.querySelector('.dropdown-child');
+         
+            boxLinks.addEventListener('mouseover', e => {
+                if(e.target.tagName !== 'A') return;
+                container.style.backgroundImage = `url(img/gens/${e.target.dataset.img}.jpg)`;
+            });
+            boxLinks.addEventListener('mouseout', e => {
+                if(e.target.tagName !== 'A') return;
+                container.style.backgroundImage = '';
+            });
+        </script>
+
+        <span id="name">Pavel Kravets</span>
+
+           
+    </body>
+</html>
