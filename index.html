@@ -1,48 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-EN">
+<html lang="fr-FR">
 
     <head>
-		    <title>Pavel Kravets</title>
+		<title>GLASS ART VERRE</title>
         <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+        <meta name="Robots" content="all">
+        <meta name="description" content="Studio VM. Nous créons des sites de cartes de visite et des sites de présentation">
+        <meta name="keywords" content="web, site, site web, studio web, développement web, création de site web, webmaster, web, site, site web, développement web, studio web">
+        <link href="css/icons.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
-    </head>
+        
+        
+	</head>
 	
     <body>
 
-        <div class="container">
-            
-            <div class="dropdown">
-                <button class="mainmenubtn">Menu</button>
-                <div class="dropdown-child">
-                  <a href="#" data-img="people">People</a>
-                  <a href="#" data-img="landscapes">Landscapes</a>
-                  <a href="#" data-img="places">Places</a>
-                  <a href="#" data-img="animals">Animals</a>
-                  <a href="#" data-img="events">Events</a>
-                  <a href="#" data-img="mcro">Macro</a>
-                  <a href="#" data-img="street">Street</a>
-                  <a href="#" data-img="blackwhite">Black&amp;White</a>
+                <div class="header">
+                    <div id="title">
+                        GLASS ART VERRE
+                    </div>
+                    
+                    <div><img id="logo_img" src="img/logo_img.jpg" alt=""></div>
                 </div>
-              </div>
+            
+                
 
-        </div>
-
-        <script>
-            const container = document.querySelector('.container'),
-                  boxLinks = document.querySelector('.dropdown-child');
-         
-            boxLinks.addEventListener('mouseover', e => {
-                if(e.target.tagName !== 'A') return;
-                container.style.backgroundImage = `url(img/gens/${e.target.dataset.img}.jpg)`;
-            });
-            boxLinks.addEventListener('mouseout', e => {
-                if(e.target.tagName !== 'A') return;
-                container.style.backgroundImage = '';
-            });
-        </script>
-
-        <span id="name">Pavel Kravets</span>
-
-           
+                <div id="info">
+                    <div id="horaires">
+                        <b>HORAIRES :</b><br><br>
+                        Lundi fermé<br>
+                        Mardi fermé<br>
+                        Mercredi 10h - 13h<br>
+                        Jeudi 14h - 18h30<br>
+                        Vendredi 10h - 13h 15h - 19h<br>
+                        Samedi 10h - 13h 15h - 19h<br>
+                        Dimanche 10h - 13
+                    </div>
+            
+                    <div id="adress">
+                        <b>ADRESS :</b> <br><br>
+                        105 quai Ledru-Rollin, Le Mans
+                    </div>
+            
+                    <div id="telephone">
+                        <b>RESERVATION PAR TELEPHONE :</b><br><br>
+                        09.44.44.44.44<br>
+                        <div class="icons">
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="#" target="_blank"><img class="instagram" src="svg/instagram-brands.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
     </body>
 </html>
