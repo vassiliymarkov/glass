@@ -116,18 +116,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     position: absolute;
     overflow: auto;
     top: 300px;
-    left: 617px;
+    left: 660px;
 }
 
 #horaires {
     text-align: left;
-	margin-right: 149px;
+	margin-right: 160px;
 	width: 30%;
 }
 
 #adress {
     text-align: left;
-	margin-right: 149px;
+	margin-right: 160px;
 	width: 30%;
 }
 
