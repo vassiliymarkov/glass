@@ -1,0 +1,16 @@
+body {
+    font-family: Helvetica;
+    font-size: 1.2em;
+    color: rgb(12, 0, 0);
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: blue;
+    padding: 0 0 0 5px;
+}
