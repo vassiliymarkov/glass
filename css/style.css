@@ -82,6 +82,10 @@ p {
 	width: 80%;
 }
 
+@media .wraper {
+	max-width: 967px;
+}
+
 .header {
     align-items: center;
     display: flex;
