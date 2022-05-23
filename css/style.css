@@ -18,10 +18,8 @@ nav,footer,header,aside{display: block;}
 html,body{
   color: black;
 	height: 100%;
-	width: 100%;
-/*	font-size: 100%;*/
+	font-size: 100%;
 	line-height: 1;
-/*	font-size: 14px;*/
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -40,7 +38,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6 {
   text-align: left;
   color: black;
-  /*font-size:inherit;*/
+  font-size:inherit;
   font-weight: unset;
 
 }
@@ -48,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   color: black;
   margin-bottom: 1rem;
-  text-align: left;
+  text-align: unset;
 }
 
 .bigred {
@@ -78,27 +76,25 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Rokkitt:wght@800&display=swap');
 
-.body {
-	width: 80%;
-}
-
-@media .wraper {
-	max-width: 967px;
-}
+.wraper {
+  margin: 0 auto;
+	max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+  }
 
 .header {
     align-items: center;
     display: flex;
     margin: 30px auto;
     height: 200px;
-    padding-top: 30px;
-    width: 80%;
-}
+    /*padding: 30px 30px 0 30px;*/
+  }
 
 .item-header {
     color: whitesmoke;
     font-family: 'Rokkitt', serif;
-    font-size: 5.5rem;
+    font-size: 1px;
 }
 
 .header div:nth-child(1) {
@@ -136,7 +132,7 @@ p {
     line-height: 200px;
     padding-right: 5px;
     width: 60%;
-	border: 1px solid rgba(0,0,0,0.5);
+	  border: 1px solid rgba(0,0,0,0.5);
     border-bottom: 3px solid rgba(0,0,0,0.5);
     border-radius: 3px 3px;
     -moz-border-radius: 3px;
@@ -165,8 +161,6 @@ p {
 }
 
 .header div:nth-child(5) {
-    /*border-radius: 7px 7px 7px 7px;
-    box-shadow: 0 0 2px 2px rgba(70, 130, 180, 0.3);*/
     background-color: #DC143C;
     line-height: 200px;
     padding-right: 5px;
@@ -206,14 +200,13 @@ p {
 
 .logo {
 	font-family: 'Rokkitt', serif;
-    font-size: 88px;
+  font-size: 77px;
 	color: whitesmoke;
 }
 
 .logo-empty {
 	font-family: 'Rokkitt', serif;
-  font-size: 88px;
-	color: #DC143C;
+  color: #DC143C;
 }
 
 a.logo:hover {
@@ -232,7 +225,6 @@ a.logo:hover {
 
   * {
     font-family: 'roboto thin';
-    /*font-size: 1em;*/
     color: white;
     text-align: center;
 }
@@ -243,9 +235,7 @@ a.logo:hover {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  text-align: left;
   padding-top: 50px;
-  width: 80%;
 }
 
 .rubric-item {
@@ -278,7 +268,6 @@ a.logo:hover {
 
 .rubricLink:hover {
     color: #DC143C;
-    text-transform: uppercase;
 }
 
 a.visited {
@@ -319,13 +308,12 @@ iii {
 
 .bienvenue {
   background-color: #F5FFFA;
+  color: inherit;
   display: flex;
-  width: 80%;
   margin: 0 auto;
 }
 
 .item-bienvenue {
-  color:black;
   font-size: 1.5rem;
   height: 500px;
   text-align: left;
@@ -339,8 +327,8 @@ iii {
 .bienvenue div:nth-child(2) {
   margin-top: -5px;
   margin-left: 30px;
+  padding: 0 30px 0 30px;
   text-align: left;
-  /*padding: 0 30px 0 0;*/
   width: 60%;
 }
 
@@ -359,21 +347,19 @@ iii {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
   margin: 0 auto;
 }
 
 .card {
   max-width: 460px;
-  margin: 50px auto;
+  margin: 50px 5px;
 }
 
-/***** Efecto *****/
+/***** Efects *****/
 
 .card-with-hover {
   position: relative;
   overflow: hidden;
-  /*background: #3085a3;*/
   text-align: center;
   height: 300px;
 }
@@ -463,9 +449,7 @@ iii {
 
 .video {
   display: flex;
-  width: 80%;
   margin: 0 auto;
-  /*padding: 40px 40px 0 0;*/
 }
 
 .video-item {
@@ -482,4 +466,62 @@ iii {
   margin-left: 30px;
   text-align: left;
   /*padding: -10px 30px 0 0;*/
+}
+
+.map {
+  display: flex;
+  height: 370px;
+  margin: 0 auto;
+}
+
+.map-item {
+  color:black;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.map div:nth-child(1) {
+  width: 50%;
+}
+
+.map div:nth-child(2) {
+  text-align: left;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgba(190, 0, 30, 1);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 150px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-item {
+  width: 33.333%;
+}
+
+.footer div:nth-child(1) {
+  text-align: left; 
+}
+
+.footer div:nth-child(2) {
+  text-align: center; 
+}
+
+.footer div:nth-child(3) {
+ text-align: right;
+}
+
+.foot {
+  color: whitesmoke;
+  font-weight: bold;
 }
