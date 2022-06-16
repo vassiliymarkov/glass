@@ -267,7 +267,7 @@ h2 {
 }
 
 .card-with-hover > .card-caption > .card-caption-content {
-  font-size: 1.3rem;
+  font-size: 1rem;
   position: absolute;
   top: 0;
   left: 0;
