@@ -164,7 +164,7 @@ iii {
   line-height: 1.4rem;
   margin-top: 20px;
   margin-left: 10px;
-  width: 25%;
+  width: 15%;
   height: 500px;
   padding: 10px 10px 10px 5px;
 }
@@ -178,16 +178,17 @@ iii {
 }
 
 .leftPannel a:hover {
-  background-color: #9dd2f1;
+  background-color: rgba(157, 207, 243);
 }
 
 .bienvenue {
   font-family: 'Roboto' serif;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   display: inline-block;
   vertical-align: top;
+  line-height: 1.3rem;
   margin: 20px 0 0 20px;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .bienvenuePic { 
@@ -197,7 +198,7 @@ iii {
 }
 
 .glass {
-  color: rgba(200, 0, 15);
+  color: rgba(157, 207, 243);
   font-weight: bold; 
  }
 
@@ -359,51 +360,39 @@ h2 {
 
 /* MAP */
 
-.items2 {
-  margin: 30px 10px;
+iframe {
+  display: inline-block;
+  margin: 20px 0 0 10px;
+  width: 73.3%;
+  aspect-ratio: 16 / 9;
 }
 
-.items__container2 {
-	max-width: 1200px;
-	padding: 0px 0px;
-	margin: 0 auto;
-}
-.items__body2 {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-}
-
-.item__video2 {
-	position: relative;
-	margin: 0px 0px 0 0px;
-	padding: 0px 0px 56% 0px;
-}
-
-.item__video2 video,
-.item__video2 iframe {
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.item__text2 {
-  background-color: #fafbfb;
-  color: black;
-	font-size: 1.2rem;
+.mapText {
+  font-size: 1.2rem;
   line-height: 1.3rem;
-  text-align: center;
-  padding: 10px 0 10px 0;
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+	width: 21.7%;
+	padding: 0px 0px;
+	margin: 20px 0 0 15px;
 }
 
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  margin: 25px 10px 0 10px;
+  width: 100%;               
+  background-color:rgba(157, 207, 243);
+  height: 5px;
+}
 
 footer {
-  background-color: #f2fefe;
+  /*background-color: #f2fefe;*/
   max-width: 100%;
   height: 150px;
-  margin: 0 10px 0 10px;
+  margin: 20px 10px 0 10px;
 }
 
 .contact {
@@ -411,7 +400,7 @@ footer {
   font-size: 1.2rem;
   line-height: 1.3rem;
   padding: 15px 0 0 30px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .linkTel {
