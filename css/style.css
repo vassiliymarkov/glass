@@ -187,6 +187,7 @@ iii {
   display: inline-block;
   vertical-align: top;
   line-height: 1.3rem;
+  text-align: justify;
   margin: 20px 0 0 20px;
   max-width: 80%;
 }
@@ -368,10 +369,10 @@ iframe {
 }
 
 .mapText {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.3rem;
   vertical-align: top;
-  text-align: left;
+  text-align: justify;
   display: inline-block;
 	width: 21.7%;
 	padding: 0px 0px;
@@ -389,7 +390,6 @@ hr {
 }
 
 footer {
-  /*background-color: #f2fefe;*/
   max-width: 100%;
   height: 150px;
   margin: 20px 10px 0 10px;
