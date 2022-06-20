@@ -16,11 +16,13 @@ nav,footer,header,aside{display: block;}
 
 html,body{
 	height: 100%;
+  font-size: 16px;
 	line-height: 1;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+
 input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
@@ -37,6 +39,10 @@ img{vertical-align: top;}
 	color: red;
 }
 
+body {
+  font-family: 'Roboto' serif;
+}
+
 /*End of Zeroing Styles*/
 
 .wraper {
@@ -45,11 +51,11 @@ img{vertical-align: top;}
   padding: 0 10px 0 10px;
 }
 
-/*@media (max-width: 1200px) {
+@media (max-width: 1999px) {
 	.wraper {
-		max-width: 970px:
+		max-width: 970px;
 	}
-}*/
+}
 
 /* NAVIGATION PANNEL */
 
@@ -57,7 +63,6 @@ img{vertical-align: top;}
   display: flex;
   flex-direction: row;
   color: black;
-  font-family: 'Roboto' serif;
   font-size: 1.2rem;
   justify-content: space-between;
   margin-left: 10px;
@@ -77,7 +82,7 @@ img{vertical-align: top;}
   color: black;
   letter-spacing: 0.3em;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 16px;
   position: relative;
 }
 
@@ -146,7 +151,6 @@ iii {
 
 .header {
   max-width: 1200px;
-  height: 250px;
   margin: 0 10px 0 10px;
   padding-bottom: 0;
 }
@@ -158,16 +162,21 @@ iii {
 
 .leftPannel {
   background-color: #f2fefe;
-  font-family: 'Roboto' serif;
-  font-size: 16.7px;
+  font-size: 20px;
   display: inline-block;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   margin-top: 20px;
   margin-left: 10px;
-  width: 15%;
-  height: 500px;
-  padding: 10px 10px 10px 5px;
+  width: 25%;
+  height: 590px;
+  padding: 10px 0 10px 5px;
 }
+
+/*@media (min-width: 992px) and (max-width: 1999px) {
+	.leftPannel {
+		height: 550px;
+	}
+}*/
 
 .leftPannel a {
   color: black;
@@ -182,20 +191,28 @@ iii {
 }
 
 .bienvenue {
-  font-family: 'Roboto' serif;
-  font-size: 1.25rem;
+  border: 1px solid black;
+  font-size: 20px;
   display: inline-block;
   vertical-align: top;
   line-height: 1.3rem;
+  letter-spacing: 1.2;
   text-align: justify;
-  margin: 20px 0 0 20px;
-  max-width: 80%;
+  margin: 20px 0 0 10px;
+  max-width: 71%;
+  height: 590px;
 }
 
 .bienvenuePic { 
   float: left;
-  margin-right: 30px;
-  max-width: 100%;
+  margin-right: 10px;
+  width: 450px;
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+	.bienvenuePic {
+		max-width: 500px;
+	}
 }
 
 .glass {
@@ -234,7 +251,8 @@ h2 {
   overflow: hidden;
   text-align: center;
   max-height: 300px;
-
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card-with-hover > img {
@@ -275,14 +293,21 @@ h2 {
   right: 0;
   width: auto;
   transition: all 0.3s;
-  text-align: left;
+  text-align: center;
   transform: translate3d(0);
   will-change: transform;
+}
+
+@media (min-width: 992px) and (max-width: 1999px) {
+	.card-with-hover > .card-caption > .card-caption-content {
+		font-size: 14px;
+	}
 }
 
 .card-with-hover > .card-caption h2 {
   display: block;
   color: #fff;
+  font-weight: bold;
   margin: 0;
   padding: 1.5rem;
   transition: all 0.3s;
@@ -295,7 +320,9 @@ h2 {
 .card-with-hover > .card-caption p {
   padding: 0 1rem;
   margin: 0;
-  color: #fff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
   opacity: 0;
   transition: opacity 0.35s 0.1s;
   transform: translate3d(0);
@@ -324,7 +351,7 @@ h2 {
 
 .items {
   background-color: #282828;
-  margin: 30px 10px 0 10px;
+  margin: 30px 10px 0px 10px;
 }
 
 .items__container {
@@ -357,6 +384,7 @@ h2 {
   color: white;
 	font-size: 1.2rem;
   line-height: 2rem;
+  padding-top: 30px;
 }
 
 /* MAP */
@@ -380,11 +408,13 @@ iframe {
 }
 
 hr {
+  
   border: 0;
   clear:both;
   display:block;
   margin: 25px 10px 0 10px;
-  width: 100%;               
+  padding-right: 10px;
+  width: 98%;               
   background-color:rgba(157, 207, 243);
   height: 5px;
 }
