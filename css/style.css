@@ -33,17 +33,11 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-
-.bigred{
-	font-size: 20px;
-	color: red;
-}
+/*End of Zeroing Styles*/
 
 body {
-  font-family: 'Roboto' serif;
+  font-family: 'Times New Roman', Times, serif;
 }
-
-/*End of Zeroing Styles*/
 
 .wraper {
   max-width: 1200px;
@@ -51,11 +45,13 @@ body {
   padding: 0 10px 0 10px;
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
 	.wraper {
 		max-width: 970px;
 	}
 }
+
+
 
 /* NAVIGATION PANNEL */
 
@@ -167,16 +163,16 @@ iii {
   line-height: 1.8rem;
   margin-top: 20px;
   margin-left: 10px;
-  width: 25%;
-  height: 590px;
+  width: 20%;
+  height: 400px;
   padding: 10px 0 10px 5px;
 }
 
-/*@media (min-width: 992px) and (max-width: 1999px) {
+@media (min-width: 992px) and (max-width: 1999px) {
 	.leftPannel {
-		height: 550px;
+		height: 700px;
 	}
-}*/
+}
 
 .leftPannel a {
   color: black;
@@ -191,16 +187,31 @@ iii {
 }
 
 .bienvenue {
-  border: 1px solid black;
-  font-size: 20px;
+  background-color: #f2fefe;
+  font-size: 25px;
   display: inline-block;
   vertical-align: top;
-  line-height: 1.3rem;
+  line-height: 1.7rem;
   letter-spacing: 1.2;
   text-align: justify;
   margin: 20px 0 0 10px;
-  max-width: 71%;
-  height: 590px;
+  max-width: 77%;
+  height: 600px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+ .bienvenue992 {
+  font-size: 25px;
+  line-height: 1.2rem;
+  height: 700px;
+  }
+}
+
+.bienvenueInner {
+  padding: 10px 10px 0 10px;
+  height: 100%;
+  line-height: 1.5rem;
+  width: 100%;
 }
 
 .bienvenuePic { 
@@ -211,7 +222,7 @@ iii {
 
 @media (min-width: 992px) and (max-width: 1999px) {
 	.bienvenuePic {
-		max-width: 500px;
+		max-width: 450px;
 	}
 }
 
