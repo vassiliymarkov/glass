@@ -157,13 +157,13 @@ iii {
 .leftPannel {
   background-color: #f2fefe;
   font-family: 'Anek Latin', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   display: inline-block;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   margin-top: 20px;
   margin-left: 10px;
   width: 20%;
-  height: 570px;
+  height: 620px;
   padding: 10px 0 10px 5px;
 }
 
@@ -194,18 +194,18 @@ iii {
 .bienvenue {
   background-color: #f2fefe;
   font-family: 'Anek Latin', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   display: inline-block;
   vertical-align: top;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
   text-align: justify;
   margin: 20px 0 0 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
   max-width: 77%;
-  height: 570px;
+  height: 620px;
 }
 
 
@@ -227,8 +227,8 @@ iii {
 .bienvenuePic {
   float: left;
   margin-right: 10px;
-  max-width: 500px;
-  height: 450px;
+ /* max-width: 500px;
+  height: 450px;*/
 }
 
 @media (min-width: 992px) and (max-width: 1999px) {
