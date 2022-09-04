@@ -48,15 +48,15 @@ body {
 
 .upperPannel {
 	margin: 0 auto;
-	max-width: 1197px;
+	max-width: 1200px;
 	background-color: #9fe8d6;
 }
 
 .menuContainer {
-  max-width: 1200px;
+    max-width: 1200px;
 	margin: 0px auto;
 	display: flex;
-  align-items: center;
+    align-items: center;
 	justify-content: space-between;
 	min-height: 70px;
 }
@@ -252,6 +252,7 @@ body._touch .menuList > li._active .menuArrow {
 }
 
 .wraper {
+	border: 1px solid black;
 	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -259,11 +260,10 @@ body._touch .menuList > li._active .menuArrow {
 }
 
 .header {
-  /*width: 100%;*/
+  width: 100%;
   margin: 0 auto;
   padding-top: 100px;
   height: fit-content;
-  z-index: -10;
 }
 
 .headerPic {
