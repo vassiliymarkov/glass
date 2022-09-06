@@ -357,11 +357,26 @@ h2 {
 	margin: 0 30px 0 30px;
 	  }
    }
+
+@media (max-width: 576px) {
+	.center {
+		border: 1px solid black;
+		margin-left: 35px;
+		justify-items: center;
+		padding-left: calc((100% - 200px)/3);
+	}
+}
+   
 .card {
-	max-width: 280px;
+	max-width: 230px;
 	margin-top: 30px;
 }
 
+@media (max-width: 576px) {
+	.card {
+		max-width: 200px;
+	}
+}
 
 
 /* Efects */
@@ -387,11 +402,11 @@ h2 {
 	  }
    }
 
-   @media (max-width: 576px) {
+@media (max-width: 576px) {
 	.card-with-hover {
 		height: 250px;
 		width: 250px;
-	  }
+		}
    }
 
 .card-with-hover >
