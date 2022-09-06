@@ -295,7 +295,7 @@ body._touch .menuList > li._active .menuArrow {
 
  @media (max-width: 768px) {
   .bienvenue {
-   font-size: 1.3rem;
+   font-size: 1.2rem;
    line-height: 25px;
    text-align: left;
     }
