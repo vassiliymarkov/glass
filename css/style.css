@@ -642,3 +642,9 @@ footer {
 .fa-brands fa-facebook {
 	padding-right: 10px;
 }
+
+.subcategory {
+	margin-top: 30px;
+	text-align: center;
+	font-weight: 600;
+}
