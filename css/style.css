@@ -161,6 +161,7 @@ body._touch .menuList > li._active .menuArrow {
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
+		margin-left: 10px;
 	}
 	.menuIcon span,
 	.menuIcon::before,
