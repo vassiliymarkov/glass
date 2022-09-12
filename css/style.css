@@ -378,7 +378,6 @@ h2 {
 
 @media (max-width: 992px) {
 	.card {
-		justify-content: baseline;
 		max-width: 210px;
 		margin: 10px 5px 10px 5px;
 	}
@@ -386,7 +385,6 @@ h2 {
 
 @media (max-width: 768px) {
 	.card {
-		justify-content: baseline;
 		max-width: 250px;
 		margin: 10px 5px 10px 5px;
 	}
@@ -394,7 +392,6 @@ h2 {
 
 @media (max-width: 576px) {
 	.card {
-		justify-content: baseline;
 		max-width: 180px;
 		margin: 10px 5px 10px 5px;
 	}
@@ -671,7 +668,7 @@ footer {
   line-height: 1.3rem;
   padding: 15px 0 0 30px;
   max-width: 100%;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .linkContact {
