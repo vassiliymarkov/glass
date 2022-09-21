@@ -705,11 +705,10 @@ footer {
 
 .articleContainer {
 	max-width: fit-content;
-	height: 500px;
 	height: fit-content;
 }
 
-/* PICTURES OF ARTICLES IN A HORIONTAL LINE */
+/* 3 PICTURES OF ARTICLES IN A HORIONTAL LINE */
 .articlePic1 {
 	max-width: 350px;
 	float: none;
@@ -727,12 +726,7 @@ footer {
 .detailes {
 	color: #353935;
 	font-size: 0.8rem;
-}
-
-.rightArrow {
-	color: red;
-	font-size: 1.5rem;
-	
+	width: 50px;
 }
 
 .price {
@@ -740,9 +734,24 @@ footer {
 	font-weight: 600;
 }
 
+.voirPlus {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.triangleRight {
+	display: inline-block;
+	margin-bottom: -1px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid red;
+}
+
 .paralax {
 	position: relative;
-	background-image: url(../img/incut/incut1.jpg);
+	background-image: url(../img/bijoux/incut/incut1.jpg);
 	height: calc(100vh - 30px);
 	margin: 50px auto;
 	max-width: 1200px;
@@ -752,3 +761,113 @@ footer {
     background-size: cover;
 }
 
+/* 2 PICTURES OF ARTICLES IN A HORIONTAL LINE */
+.articlePic2 {
+	max-width: 575px;
+	float: none;
+}
+
+.articleText {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 5px 10px 5px;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+}
+
+.detailes {
+	color: #353935;
+	font-size: 0.8rem;
+	width: 50px;
+}
+
+.price {
+	color: red;
+	font-weight: 600;
+}
+
+.voirPlus {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.triangleRight {
+	display: inline-block;
+	margin-bottom: -1px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid red;
+}
+
+/*.paralaxVideoContainer {
+	position: relative;
+	min-height: 100vh;
+	margin: 0 auto;
+	width: 1200px;
+	font-display: flex;
+	flex-direction: column;
+}
+
+.paralaxVideoBody {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: red;
+}
+
+.paralaxVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 70px);
+	object-fit: cover;
+}*/
+
+.paralaxVideoContainer {
+	position: relative;
+	height: calc(100vh - 70px);
+	display: flex;
+	flex-direction: column;
+}
+.paralaxVideoBody {
+	padding: 50px 15px;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-transform: uppercase;
+}
+
+.paralaxVideoTitle {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0px 0px 20px 0px;
+}
+
+.paralaxVideoText {
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 5px;
+	line-height: 2rem;
+}
+.paralaxVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
