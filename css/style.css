@@ -275,6 +275,10 @@ body._touch .menuList > li._active .menuArrow {
   }
 /* HEADER END */
 
+/* MAIN PAGE */
+
+/* BIENVENUE TEXT ON MAIN PAGE */
+
 .bienvenue {
 	background-color: #f2fefe;
 	font-size: 1.3rem;
@@ -322,7 +326,7 @@ body._touch .menuList > li._active .menuArrow {
 	font-weight: normal;
   }
   
-  
+  /* BIENVENUE TEXT ON MAIN PAGE */
   
   
   /* VIDEO */
@@ -451,6 +455,8 @@ body._touch .menuList > li._active .menuArrow {
 	}
   }
   
+  /* FOOTER */
+
   footer {
 	max-width: 100%;
 	height: 150px;
@@ -481,6 +487,13 @@ body._touch .menuList > li._active .menuArrow {
 	  padding-right: 10px;
   }
 
+  /* FOOTER END */
+
+  /* MAIN PAGE END */
+
+
+  /** BIJOUX AND DECORATIONS PAGES **/
+  
   /* CARDS / THREE IN A LINE */
 
 * {
@@ -612,7 +625,9 @@ body._touch .menuList > li._active .menuArrow {
 	  opacity: 1;
   }
 
-/* --- */
+/* END CARDS / THREE IN A LINE */
+
+
 
 .paralax {
 	position: relative;
@@ -647,6 +662,8 @@ body._touch .menuList > li._active .menuArrow {
     background-repeat: no-repeat;
 	background-size: contain;
 }
+
+/* PARALAX END */
 
 /* CARDS / TWO IN A LINE */
 
@@ -784,6 +801,8 @@ body._touch .menuList > li._active .menuArrow {
 
 /* END OF CARDS / TWO IN A LINE */
 
+/* ADDIONAL INFO ON AN ARTICLE AND PRICE */
+
 .voirPlus {
 	margin-top: 10px;
 	display: inline-block;
@@ -823,6 +842,9 @@ body._touch .menuList > li._active .menuArrow {
 	border-bottom: 5px solid transparent;
 	border-left: 10px solid red;
 }
+
+/* END OF ADDIONAL INFO ON AN ARTICLE AND PRICE */
+
 
 /* VIDEO INCUT */
 
@@ -884,4 +906,43 @@ body._touch .menuList > li._active .menuArrow {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+/* VIDEO INCUT END */
+
+
+/** ARTCLE PAGES **/
+
+.articleContainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.articleImage {
+	width: 400px;
+	height: 400px;
+}
+
+.thumbsList {
+	
+}
+
+.thumbnails {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	height: fit-content;
+	margin-top: 30px;
+}
+
+.thumbsList {
+	display: flex;
+}
+
+.thumbs {
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
 }
