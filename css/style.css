@@ -927,34 +927,38 @@ body._touch .menuList > li._active .menuArrow {
 	display: inline-block;
 	flex-wrap: wrap;
 	margin: 50px 10px 5px 10px;
-	width: calc(310px + (550 - 310) * ((100vw - 320px) / (1200 - 320)));;
+	width: fit-content;
+	height: fit-content;
 }
 
 @media (max-width: 576px) {
 	.articleContainer {
 		display: flex; /* Rearranging content so previews are shown before product descriptions */
 		flex-direction: column;
-		margin: 50px 10px 5px 20px;
-		align-items: center;
-		margin-left: 70px;
+		margin-top: 50px;
+		margin-bottom: 5px;
+		margin-left: calc(10px + (115 - 10) * ((100vw - 320px) / (576 - 320)));
 	}
-}
-.images {
-	display: flex;
-	flex-direction: column;
 }
 
 @media (max-width: 1200px) {
 	.articleImage {
-		width: calc(300px + (600 - 300) * ((100vw - 320px) / (1200 - 320)));
-		height: calc(300px + (600 - 300) * ((100vw - 320px) / (1200 - 320)));
+		width: calc(300px + (450 - 300) * ((100vw - 320px) / (1200 - 320)));
+		height: calc(300px + (450 - 300) * ((100vw - 320px) / (1200 - 320)));
+	}	
+}
+
+@media (min-width: 1200px) {
+	.articleImage {
+		width: calc(300px + (450 - 300) * ((100vw - 320px) / (1200 - 320)));
+		height: calc(300px + (450 - 300) * ((100vw - 320px) / (1200 - 320)));;
 	}	
 }
 
 .articleInfo {
 	position: absolute;
 	display: inline-block;
-	font-size: calc(0.8rem + (1 - 0.8) * ((100vw - 320px) / (1200 - 320)));
+	font-size: calc(1rem + (1.2 - 1) * ((100vw - 320px) / (1200 - 320)));
 	margin-top: 50px;
 	margin-left: 30px;
 }
@@ -963,6 +967,7 @@ body._touch .menuList > li._active .menuArrow {
 	.articleInfo {
 		position: relative;
 		margin-left: 40px;
+		text-align: left;
 	}
 }
 
@@ -972,7 +977,7 @@ body._touch .menuList > li._active .menuArrow {
 
 .note {
 	color: gray;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	margin: 30px 20px 0 20px;
 }
 
@@ -983,12 +988,6 @@ body._touch .menuList > li._active .menuArrow {
 	margin-top: 30px;
 }
 
-@media (max-width: 567px) {
-	.thumbnails {
-		flex-direction: column;
-	}
-}
-
 .thumbsList {
 	display: flex;
 	flex-wrap: wrap;
@@ -996,22 +995,10 @@ body._touch .menuList > li._active .menuArrow {
 	justify-content: space-around;
 }
 
-@media (max-width: 567px) {
-	.thumbList {
-		flex-direction: column;
-	}
-}
-
-.thumbs {
-	width: 150px;
-	height: 150px;
-	margin-right: 20px;
-}
-
 @media (max-width: 1200px) {
 	.thumbs {
-	width: calc(100px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
-	height: calc(100px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
+	width: calc(90px + (100 - 90) * ((100vw - 320px) / (1200 - 320)));
+	height: calc(90px + (100 - 90) * ((100vw - 320px) / (1200 - 320)));
 	margin-right: 10px;
 	margin-top: 10px;
 	}
@@ -1019,8 +1006,8 @@ body._touch .menuList > li._active .menuArrow {
 
 @media (min-width: 1200px) {
 	.thumbs {
-	width: calc(100px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
-	height: calc(100px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
+	width: calc(110px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
+	height: calc(110px + (110 - 100) * ((100vw - 320px) / (1200 - 320)));
 	margin-right: 10px;
 	margin-top: 10px;
 	}
@@ -1044,12 +1031,6 @@ body._touch .menuList > li._active .menuArrow {
 	flex-direction: column;
 	margin-top: 20px;
 	padding-bottom: 10px;
-}
-
-@media (max-width: 400px) {
-	.productesSimailarBlock {
-		margin-left: 20%;
-	}
 }
 
 .productsSimilarImg {
