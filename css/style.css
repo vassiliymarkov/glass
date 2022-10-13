@@ -958,7 +958,7 @@ body._touch .menuList > li._active .menuArrow {
 .articleInfo {
 	position: absolute;
 	display: inline-block;
-	font-size: calc(1rem + (1.2 - 1) * ((100vw - 320px) / (1200 - 320)));
+	font-size: 1.5rem;
 	margin-top: 50px;
 	margin-left: 30px;
 }
