@@ -978,7 +978,8 @@ body._touch .menuList > li._active .menuArrow {
 .note {
 	color: gray;
 	font-size: 1rem;
-	margin: 30px 20px 0 20px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 .thumbnails {
@@ -1014,7 +1015,15 @@ body._touch .menuList > li._active .menuArrow {
 }
 
 .productsSimalarTitle {
-	margin: 50px 20px 0 20px;
+	margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+	.productsSimalarTitle {
+		position: relative;
+		margin-left: 40px;
+		text-align: left;
+	}
 }
 
 .productsSimilar {
