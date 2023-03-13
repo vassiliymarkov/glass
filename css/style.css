@@ -694,6 +694,30 @@ body._touch .menuList > li._active .menuArrow {
 	background-size: cover;
 }
 
+.paralaxCollierPendetifOne {
+	position: relative;
+	background-image: url(../img/bijoux/collier_pendetif/collier_pendetif_031_01_paralax.jpg);
+	height: calc(100vh - 30px);
+	margin: 0 auto;
+	width: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.paralaxCollierPendetifTwo {
+	position: relative;
+	background-image: url(../img/bijoux/collier_pendetif/collier_pendetif_085_01_paralax.jpg);
+	height: calc(100vh - 30px);
+	margin: 0 auto;
+	width: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* PARALAX END */
 
 /* CARDS / TWO IN A LINE */
